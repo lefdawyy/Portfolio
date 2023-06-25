@@ -1,0 +1,10 @@
+
+<div class="container">
+  <h4>MY SPECIALTY</h4>
+  <h1>MY SKILLS</h1>
+  <div class="skills">
+    <div class="skill" *ngFor="let skill of skills">
+      <app-skill [iconName]="skill.iconName" [title]="skill.title" [description]="skill.description" [color]="skill.color" />
+    </div>
+  </div>
+</div>

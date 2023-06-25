@@ -1,0 +1,81 @@
+.container {
+  margin-left: 10px;
+  margin-top: 30%;
+}
+
+h4 {
+  font-family: Courier;
+}
+
+h1 {
+  font-family: 'Andale Mono, monospace';
+  font-weight: bold;
+}
+
+.contacts-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 5px;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(224, 224, 224);
+  border: none;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #003380;
+}
+
+.communications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 10%;
+  }
+
+  .contacts-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .email-container {
+    width: 100%;
+  }
+}

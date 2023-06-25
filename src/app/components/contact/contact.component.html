@@ -1,0 +1,18 @@
+<div class="container">
+  <h4>GET IN TOUCH</h4>
+  <h1>CONTACT</h1>
+  <div class="contacts-container">
+    <div class="communications-container">
+      <div *ngFor="let cm of communications">
+      <app-communication [type]="cm.type" [iconName]="cm.iconName" [link]="cm.link" />
+      </div>
+    </div>
+    <div class="email-container">
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Email" />
+      <input type="text" placeholder="Subject" />
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+</div>

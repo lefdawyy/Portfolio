@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1.5px solid;
+  width: 170px;
+  gap: 20px;
+  padding-top: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  mat-icon {
+    color: white;
+  }
+}
+
+.info {
+  padding: 5px;
+  margin-top: 50px;
+  text-align: center;
+}

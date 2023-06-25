@@ -1,0 +1,12 @@
+<div class="container">
+  <img [src]="profile.image"/>
+  <h3>{{profile.name}}</h3>
+  <h4>{{profile.jobTitle}} from {{profile.country}}</h4>
+  <div class="buttons">
+    <ul>
+      <li *ngFor="let link of profile.links">
+        <app-custom-button [title]="link.title" [url]="link.url"></app-custom-button>
+      </li>
+    </ul>
+  </div>
+</div>

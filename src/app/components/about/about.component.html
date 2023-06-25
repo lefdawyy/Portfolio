@@ -1,0 +1,16 @@
+<div class="container">
+  <h4>About us</h4>
+  <h1>WHO AM I ?</h1>
+  <p><span>Hi I'm Jehad Lefdawy,</span> I am currently computer science apprenticeship - software engineering student. Through practical projects and coursework,
+    I am developing a solid foundation in various programming languages and gaining experience with database management and backend web frameworks.
+    For a detailed overview of my skills, please refer to the Skills section, and feel free to explore my projects in the Projects section.
+  <br>While my professional journey is still in its early stages, I am determined to make a significant impact on the industry. I aspire to contribute to groundbreaking
+    projects that shape the future of technology, pushing boundaries and introducing innovative solutions. Open to new opportunities that challenge and stretch my
+    abilities, I am committed to continuous growth as a software engineer. By leveraging my skills, knowledge, and passion, I aim to establish myself as a respected
+    professional who inspires and leads others to achieve remarkable results. Together, we can shape a brighter future in the realm of technology.</p>
+  <div class="features">
+    <div *ngFor="let feature of features">
+      <app-feature [iconName]="feature.iconName" [color]="feature.color" [title]="feature.title"></app-feature>
+    </div>
+  </div>
+</div>
