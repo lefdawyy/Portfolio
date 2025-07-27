@@ -45,28 +45,15 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#090909" />
-
-        {/* Fullsession Recording Code for http://fullsession.io/ */}
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function (m, n, t, l, x, p, o) {
-                window["_fus_host"] = l;
-                window["_site_id"] = p;
-                window["_fus_id"] = x;
-                o = n.createElement(t);
-                o.type = "text/javascript";
-                o.async = true;
-                o.src = "https://rt-dev.fullsession.io/RTSessions-dev.js";
-                y = n.getElementsByTagName(t)[0];
-                y.parentNode.insertBefore(o, y);
-              })(window, document, "script", "fullsession.io", 'cus_m2hlevx95dt');
-            `,
-          }}
-        />
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TRR774ZQ');</script>
       </head>
       <body className={inter.className}>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRR774ZQ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
